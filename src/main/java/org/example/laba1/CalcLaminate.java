@@ -1,4 +1,4 @@
-package org.example;
+package org.example.laba1;
 
 import org.junit.After;
 import org.junit.Before;
@@ -34,17 +34,17 @@ public class CalcLaminate{
 
     @Test
     public void testCalculatorCase1() {
-        performTest("со смещение на 1/2 длины", 51, 7); // Обновите ожидаемые значения
+        performTest("со смещение на 1/2 длины", 51, 7);
     }
 
     @Test
     public void testCalculatorCase2() {
-        performTest("со смещение на 1/3 длины", 52, 7); // Обновите ожидаемые значения
+        performTest("со смещение на 1/3 длины", 52, 7);
     }
 
     @Test
     public void testCalculatorCase3() {
-        performTest("с использованием отрезанного элемента", 53, 7); // Обновите ожидаемые значения
+        performTest("с использованием отрезанного элемента", 53, 7);
     }
 
     private void performTest(String layoutMethod, int expectedBoards, int expectedPacks) {
@@ -74,7 +74,7 @@ public class CalcLaminate{
         element.clear();
         element.sendKeys(value);
         try {
-            Thread.sleep(500); // Задержка 0.5 секунд между вводами
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

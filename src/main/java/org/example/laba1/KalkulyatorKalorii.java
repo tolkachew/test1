@@ -1,4 +1,4 @@
-package org.example;
+package org.example.laba1;
 
 import org.junit.After;
 import org.junit.Before;
